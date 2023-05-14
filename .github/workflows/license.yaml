@@ -1,0 +1,19 @@
+name: Update LICENSE Year(s)
+
+on:
+  schedule:
+    - cron: 0 3 1 1 * # Jan  1 03:00:00 AM UTC
+
+permissions:
+  contents: write
+
+jobs:
+  license:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: FantasticFiasco/action-update-license-year@v3
+        with:
+          token: ${{ github.token }}

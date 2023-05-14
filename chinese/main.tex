@@ -1,0 +1,40 @@
+\documentclass{awesome-cv}
+\usepackage{ctex}
+\usepackage{siunitx}
+\usepackage[backend = biber]{biblatex}
+
+\makeatletter
+\addbibresource{bibliography.bib}
+\NewDocumentCommand{\GitHubRef}{m}{\href{https://github.com/\@github/#1}{#1}}
+\setbool{acvSectionColorHighlight}{false}
+\makeatother
+
+\name{}{李钦}
+\position{学生}
+
+\mobile{(+86) 188-0018-6780}
+\email{i@liblaf.me}
+\dateofbirth{2002.12.23}
+\homepage{liblaf.me}
+\github{liblaf}
+\googlescholar{tLAvFxcAAAAJ}{Google Scholar}
+
+\quote{``Life blooms like a flower.''}
+
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter{\today}{李钦 \quad\textbullet\quad 简历}{\thepage}
+
+\input{education.tex}
+\input{honors.tex}
+\input{academic.tex}
+\input{competition.tex}
+\input{github.tex}
+\input{social-work.tex}
+\input{volunteer.tex}
+\input{social-practice.tex}
+\input{fun.tex}
+
+\end{document}
