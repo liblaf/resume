@@ -2,28 +2,3 @@ ci:
   autofix_commit_msg: "ci(pre-commit): auto fixes from pre-commit hooks"
   autoupdate_commit_msg: "ci(pre-commit): update pre-commit hooks"
 repos: []
-/mirrors-prettier
-    rev: "v3.0.0-alpha.9-for-vscode"
-    hooks:
-      - id: prettier
-        stages:
-          - commit
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "v4.4.0"
-    hooks:
-      - id: check-added-large-files
-      - id: check-case-conflict
-      - id: check-json
-      - id: check-symlinks
-      - id: check-toml
-      - id: check-yaml
-      - id: destroyed-symlinks
-      - id: end-of-file-fixer
-      - id: mixed-line-ending
-      - id: trailing-whitespace
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: "0.23.0"
-    hooks:
-      - id: check-dependabot
-      - id: check-github-actions
-      - id: check-github-workflows
