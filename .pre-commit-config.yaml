@@ -19,7 +19,7 @@ repos:
           - --modifylinebreaks
           - --GCString
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.22.0
+    rev: v3.24.0
     hooks:
       - id: commitizen
   - repo: https://github.com/pre-commit/mirrors-prettier
